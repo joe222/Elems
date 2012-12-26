@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <script type="text/html" id="bodyTemplate">  
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="./index.html">fffff</a>
+          {{topNavigation}}
+           <ul class="nav" id="topNav">
+              <li class="active">
+                <a href="./index.html">Home</a>
+              </li>              
+              <li class="">
+                <a href="./scaffolding.html">Scaffolding</a>
+              </li>
+              <li class="">
+                <a href="./base-css.html">Base CSS</a>
+              </li>
+              <li class="">
+                <a href="./components.html">Components</a>
+              </li>
+              <li class="">
+                <a href="./javascript.html">JavaScript</a>
+              </li>
+              <li class="">
+                <a href="./customize.html">Customize</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+      </script>
+                                      
+         <script type="text/html" id="navItemTemplate"> 
+<li class="{{state}}"><a href="#{{href}}">{{title}}</a></li>
+         </script>
+  </head>
+
+  <body >
+
+    <!-- Navbar
+    ================================================== -->
+  
+         <script type="text/html" id="bTemplate"> 
+           template b: <%=obj.name%>
+         </script>
+          <script type="text/html" id="cTemplate"> 
+          template c:{{name}}
+         </script>
+         <script data-main="js/default_config" src="js/vendors/require.js"></script>
+  </body>
+</html>
